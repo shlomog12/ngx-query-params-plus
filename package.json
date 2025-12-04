@@ -1,0 +1,48 @@
+{
+  "name": "ngx-query-params-plus",
+  "version": "1.0.0",
+  "description": "Advanced Angular service for managing URL query params with reactive features, debounce handling and state sync.",
+  "author": "Shlomo Glick",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "query params",
+    "url",
+    "router",
+    "ngx",
+    "params",
+    "state management"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shlomog12/ngx-query-params-plus.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "prepare": "npm run build",
+    "test": "vitest",
+    "clean": "rimraf dist"
+  },
+
+  "peerDependencies": {
+    "@angular/core": ">=17.0.0",
+    "@angular/common": ">=17.0.0",
+    "@angular/router": ">=17.0.0",
+    "rxjs": ">=7.5.0"
+  },
+
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "vitest": "^1.2.0",
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0"
+  }
+}
